@@ -1,6 +1,3 @@
-const array1 = [];
-const array2 = [];
-
 function saveAndDisplayValue() {
     // Get the value of the text input fields
     let inputValue = document.getElementById("textInput").value;
@@ -12,25 +9,38 @@ function saveAndDisplayValue() {
 
     let displayArea = document.getElementById("displayArea");
 
-    displayArea.textContent = "For Loop:";
-    for (let i = 1; i < 1000; i++) {
-        array1[i] = manipulatedValue * i;
-        array2[i] = manipulatedValue2 * i;
+    // Initialize sums
+    let sum1 = 0;
+    let sum2 = 0;
+    let minus = 0;
 
-        // Display the current value of i in the display area
-        displayArea.textContent += " " + array1[i] + "\tarray value: " + array2[i];
-    }
-
-    // Calculate the sum of the arrays
-    let sum = 0;
-    for (let i = 1; i < 1000; i++) {
-        if (array1[i] % manipulatedValue2 == 0) {
-            sum += array1[i];
+    // Calculate sum of multiples of manipulatedValue
+    for (let i = 0; i < 1000; i = i+ manipulatedValue) {
+        if (i % manipulatedValue == 0) {
+            sum1 += i;
         }
     }
 
-    // Display the manipulated values and sum in the display area
-    displayArea.textContent += " Your First number is: " + manipulatedValue + " Your second number is: " + manipulatedValue2 + " and the sum is: " + sum;
+    // Calculate sum of multiples of manipulatedValue2
+    for (let j = 0; j < 1000; j = j+ manipulatedValue2) {
+        if (j % manipulatedValue2 == 0) {
+            sum2 += j;
+        }
+    }
+
+    // Calculate sum of common multiples and subtract from sum1 and sum2
+    for (let k = 0; k < 1000; k = k + manipulatedValue2) {
+       
+        if (k % manipulatedValue == 0) {
+            minus += k;
+        }
+    }
+
+    // Calculate total sum
+    let totalSum = sum1 + sum2 - minus;
+
+    // Display the sum
+    displayArea.textContent = "The sum of all multiples of " + manipulatedValue + " or " + manipulatedValue2 + " below 1000 (excluding common multiples) is: " + totalSum;
 }
 
 // Get the save button element
