@@ -3,15 +3,22 @@
 }
 
 .links1{
-    margin-left: 1070px;
+    margin-left: 800px;
+    margin-top: 20px;
     
     
 
+
+
 }
+.links{
+    margin-top: 20px;
+}
+
 .nav-link{
     
     color: black;
-    text-decoration: none !important;
+    text-decoration: none;
     
 }
 .nav-link:hover{
@@ -32,9 +39,50 @@
 }
 .botton{
     background-color: var(--boo);
+    margin-top: 100px;
 }
 .container{
     max-width: 100%;
 }
 
+.video{
+    width: 100%;
+    height: auto; /* Allow the height to adjust proportionally based on the width */
+    max-width: 850px;
+    border: #7743e2 solid 4px;
+    border-radius: 8px;
+    
+}
+.Logo{
+    margin-top: -10px;
+   
+    width: 15px;
+}
+#textInput, #textInput2{
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+}
+.btn{
+    width: 100px;
+}
+fieldset{
+    border:black solid 1px;
+    width: 350px;
+    border-radius: 9px;
+    background-color: #7743e2;
+}
+h6{
+    text-align: center;
+    
+}
+#saveButton{
+    background-color: var(--boo);
+}
+footer{
+    background-color: gray;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
