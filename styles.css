@@ -1,15 +1,40 @@
+:root{
+    --boo: #7743e2;
+}
+
 .links1{
-    margin-left: 800px;
+    margin-left: 1070px;
+    
     
 
 }
+.nav-link{
+    
+    color: black;
+    text-decoration: none !important;
+    
+}
+.nav-link:hover{
+    
+    color: white;
+    
+    
+}
 .NavHead{
-    background-color: #1D6A96;
+    background-color: var(--boo) ;
     
     border-radius: 4px;
     margin-bottom: -8px;
+    
 }
 .borderNav{
-    background-color: #f1f1f1;
+    background-color: var(--boo);
 }
+.botton{
+    background-color: var(--boo);
+}
+.container{
+    max-width: 100%;
+}
+
 
