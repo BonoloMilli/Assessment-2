@@ -29,12 +29,15 @@
     
     border-radius: 4px;
     margin-bottom: -8px;
-    box-shadow: 5px 5px 10px #888888;
+    
+    
     
     
 }
 .borderNav{
     background-color: var(--boo);
+    box-shadow: 5px 5px 10px #888888;
+    
 }
 .botton{
     background-color: var(--boo);
@@ -82,10 +85,11 @@ h6{
     background-color: var(--boo);
 }
 footer{
-    background-color: gray;
+    background-color: #cec7db;
     text-align: center;
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: -15px;
 }
 
 .backgroundLogo{
@@ -116,5 +120,29 @@ footer{
 
 
 }
+
+
+#displayArea {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: xx-large;
+
+}
+.quiz{
+    border: #ac99d0 solid 2px;
+    border-radius: 8px;
+    background-color: #b5abc8;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+
+
+
+
+
+
+
+
 
 
