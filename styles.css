@@ -41,7 +41,8 @@
 }
 .botton{
     background-color: var(--boo);
-    margin-top: -350px;
+    margin-top: 10px;
+    margin-right: 150px;
 }
 .container{
     max-width: 100%;
@@ -135,6 +136,25 @@ footer{
     background-color: #b5abc8;
     box-shadow: 5px 5px 10px #888888;
 }
+
+
+
+
+@media screen and (max-width: 576px) {
+    /* Styles for small screens */
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    /* Styles for medium screens */
+}
+
+@media screen and (min-width: 992px) {
+    /* Styles for large screens */
+}
+
+
+
+
 
 
 
