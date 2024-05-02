@@ -14,7 +14,7 @@
 
 .nav-link{
     
-    color: black;
+    color: white;
     text-decoration: none;
     
 }
@@ -139,6 +139,26 @@ footer{
     
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #555;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7743e2;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 
 
